@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Вывести в созданном документе заглавия - h1, h2, h3
+h$*6>{h$} -> click tab
+-->
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3><h4>h4</h4><h5>h5</h5><h6>h6</h6>
+<!--Вывести жирный, курсив и подчеркнутый текст
+b>lorem10+em>lorem10+u>lorem10 -> click tab
+-->
+<b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quidem?<em>Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Impedit, quo.<u>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,
+        magni?</u></em></b>
+<!--Вывести текст в абзаце
+p>lorem -> click tab
+-->
+<p style="text-indent:20px;"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum officiis rerum ullam. Animi consequuntur dolorum ea earum, eligendi quod soluta sunt. Architecto autem necessitatibus, quisquam rem reprehenderit totam veritatis voluptate.</span><span>Aliquid, blanditiis consectetur cumque debitis deserunt dolorem doloremque, eveniet excepturi exercitationem, explicabo facilis id illo iure molestias nihil nisi obcaecati odio quis quod ratione saepe sed veniam voluptate. Ducimus, eaque.</span><span>Accusamus at atque commodi, corporis cum deleniti dicta ducimus ea enim eos exercitationem facilis fugiat illo in libero mollitia odio officiis, possimus provident quis quod repellendus reprehenderit, veritatis vitae voluptate!</span><span>Accusamus, aliquid aut consequuntur debitis dolores est expedita ipsam iure iusto, maiores modi nihil nisi nostrum odio provident quam quis reprehenderit velit veritatis voluptates! Cum cumque ex explicabo ipsa ipsam?</span><span>Illo iusto magnam numquam odio voluptatibus. Amet asperiores doloribus error, eveniet harum perferendis quis recusandae reprehenderit sequi similique, totam velit voluptates voluptatum! Ab eum maiores, nulla quisquam rem repudiandae sequi.</span>
+</p>
+<!--Вывести ссылки на внешний ресурс. Первая ссылка должна открываться в текущей вкладке браузера, а вторая ссылка, должна открывать внешний ресурс в новой вкладке.
+a[href='http://google.com']{google}+a[target='_blank' href='http://ya.ru']{ya}
+-->
+<a href="http://google.com">google</a><a href="http://ya.ru" target="_blank">ya</a>
+<!--Создать блочный (For ex.: div) и строчный тег (For ex.: span)
+div{div}+span{span}
+-->
+<div>div</div>
+<span>span</span>
+<!--Вывести таблицу, где в ней будет 5 столбцов: ID, имя, фамилия, отчество, дата рождения. Таблицу заполнить 2 записями
+bad path! table>tr*3>td[style='border:1px solid black;']*5>{some}
+1)
+ID, имя, фамилия, отчество, дата рождения
+1,Alex,Zhdan,V,1977\03\29
+2,Limitrof,IT,Net,2014\02\02 -> select and click Ctrl+Alt+J
+2)
+Select Emmet and write table>tr*>td  -> Enter
+<table>
+    <tr>
+        <td>ID, имя, фамилия, отчество, дата рождения</td>
+    </tr>
+    <tr>
+        <td>1,Alex,Zhdan,V,1977\03\29</td>
+    </tr>
+    <tr>
+        <td>2,Limitrof,IT,Net,2014\02\02</td>
+    </tr>
+</table>
+3)
+replace "," to "</td><td></td>"
+-->
+<table>
+    <tr>
+        <td>ID</td><td> имя</td><td> фамилия</td><td> отчество</td><td> дата рождения</td>
+    </tr>
+    <tr>
+        <td>1</td><td>Alex</td><td>Zhdan</td><td>V</td><td>1977\03\29</td>
+    </tr>
+    <tr>
+        <td>2</td><td>Limitrof</td><td>IT</td><td>Net</td><td>2014\02\02</td>
+    </tr>
+</table>
+<!--
+Создать HTML-форму. Внутри формы создать поля для ввода: имени, фамилии, отчества, даты рождения, пароля и подтверждения пароля. Также, ко всем полям ввода нужно привязать метки label, в которых будет выведено имя поля. Метки должны находится с левой стороны от полей ввода. Форма должна содержать поле-флаг, который будет нужен для подтверждения лицензионного соглашения и радио-кнопки для выбора гендерной принадлежности. Внизу формы должна быть кнопка для отправки введенных данных.
+1)
+form (ctrl+shift+enter || tab)
+2)
+Создать список и выделив его вызвать EMMET (ctrl+alt+j)
+
+имя
+фамиля
+отчество
+дата рождения
+пароль
+подтверждения пароля
+
+.onebyone*>label[for="id$@" style="display:inline-block;width:150px;"]{$#}+input:text#id$@[placeholder="$#"]^^input:submit[value="SEND"]
+-->
+<form action="">
+имя
+фамиля
+отчество
+дата рождения
+пароль
+подтверждения пароля
+</form>
+</body>
+</html>
