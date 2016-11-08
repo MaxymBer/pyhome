@@ -1,4 +1,4 @@
-print('Homework 20161108 sykles')
+print('Homework 20161108 cycles')
 number_list = [-4325.235, 13, 2134123.234, 1, 11, 44, 200]
 max_number = min_number = number_list[0]
 for i in number_list:
